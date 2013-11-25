@@ -1,0 +1,55 @@
+.box-sizing () {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+}
+
+// Defaults to 5px radius
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+}
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+
+.boxmodel(@width) {
+  float: left;
+  display: inline-block;
+  width: @width;
+}
+
+// Mixin for horizontal lists
+.list-horizontal(@right-m: 40px, @font-colour: @color-nav) {
+  
+  display: inline;
+    margin-right: @right-m;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      color: @font-colour;
+      font-size: @basefontsize * 2;
+    }
+    
+}
+
+//Mixin for active nav item
+.nav-active() {
+  font-weight: bold;
+  border-bottom: 1px solid @ww-pink;
+}
+
+// Can be no bigger than 45%
+.widthfloat (@width) {
+  float: left;
+  display: inline-block;
+  width: @width;
+  margin: 0 (@width * 0.055);
+}

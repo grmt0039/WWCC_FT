@@ -1,0 +1,158 @@
+@import 'includes/brand.less';
+@import 'includes/typography.less';
+@import 'includes/mixins.less';
+
+* {
+  .box-sizing;
+}
+
+body {
+  background: #fff;
+  font-family: @bodyfontfamily;
+
+  //sets base font size to 10px for easy transition
+  font-size: 62.5%;
+  color: #000;
+}
+
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+
+
+/* HEADER START */
+
+.header-wrapper{
+  position: relative;
+}
+
+header {
+	background: @dark-cream;
+	.boxmodel(100%);
+	padding: 10px 0 0;
+	position: fixed;
+	top:0;
+
+  	ul li {
+	      display: inline-block;
+	}
+
+  #tp-header {
+  	height: 50px;
+  	background: @dark-cream;
+  
+	h1 {
+	    .boxmodel(20%);
+	    text-indent: -9999px;
+	    background: @dark-cream url(../images/wwcc-logo.png) no-repeat;
+	    height: 80px;
+	    margin: 0;
+	  }
+
+	ul li {
+	      padding: 0 10px;
+
+	      a.active {
+	          //mixin for active nav item
+	          .nav-active()
+	      }
+
+	      /*a:hover {
+	      	opacity: 0.5;
+	      }*/
+	  }
+
+	.cta {
+		float: left;
+
+		li {
+			width: 170px;
+			height: 40px;
+			.border-radius();
+			background: @cta-pink;
+			margin-right: 30px;
+			//padding: 0 auto;
+			text-align: center;
+
+			&:hover{
+				background: #000;
+			}
+
+			a{
+				color: #fff;
+				font-size: 1.8em;
+				text-transform: uppercase;
+				line-height: 3.5em;
+
+				
+			}
+		}
+	}
+
+	.social-media{
+		li{
+			.border-radius(30px);
+			width: 38px;
+			background: @ww-pink;
+			padding: 0;
+			margin-right: 8px;
+
+			&:hover{
+				background: #000;
+			}
+		}
+	}
+
+	  .menu-button {
+	    display: none;
+	  }
+
+  }
+
+  #bt-header {
+
+  	background: @light-cream;
+  	height: 50px;
+
+  	nav{
+    
+		//margin-top: 15px;
+	    //.boxmodel(60%);
+	    //font-size
+
+	    ul li {
+	      margin: 20px 10px 0;
+	      padding: 0 10px;
+	      font-size: 1.8em;
+	      border-right: 1px solid #000;
+
+	      &:hover{
+	      	border-bottom: 3px solid @ww-pink;	      	
+	      }
+
+	      &:last-child {
+	      	border-right: 0;
+	      }
+
+	      a.active {
+	          //mixin for active nav item
+	          .nav-active()
+	      }
+
+	      a:hover{
+	      	//font-weight: bold;
+	      	color: #000;
+	      }
+
+
+	    }
+	}
+
+  }
+  
+
+  
+}
+/* HEADER END */
