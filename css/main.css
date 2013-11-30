@@ -17,13 +17,13 @@ p {
   line-height: 1.6em;
 }
 h2 {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #1a1a1a;
 }
 h1,
 h3,
 h4 {
-  font-family: "Droid Sans", Arial, Helvetica, san-serif;
+  font-family: Helvetica, Verdana, Geneva, Arial, san-serif;
   font-weight: 700;
   line-height: 1em;
 }
@@ -48,12 +48,12 @@ h4 {
 }
 body {
   background: #fff;
-  font-family: Roboto, Arial, Helvetica, san-serif;
+  font-family: Helvetica, Verdana, Geneva, Arial, san-serif;
   font-size: 62.5%;
   color: #000;
 }
 .container {
-  max-width: 75%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 /* HEADER START */
@@ -82,7 +82,8 @@ header #tp-header h1 {
   width: 20%;
   text-indent: -9999px;
   background: #e5ddcb url(../images/wwcc-logo.png) no-repeat;
-  height: 80px;
+  height: 100px;
+  width: 170px;
   margin: 0;
 }
 header #tp-header ul li {
@@ -97,6 +98,7 @@ header #tp-header ul li a.active {
 }
 header #tp-header .cta {
   float: left;
+  margin-left: 33%;
 }
 header #tp-header .cta li {
   width: 170px;
@@ -115,7 +117,10 @@ header #tp-header .cta li a {
   color: #fff;
   font-size: 1.8em;
   text-transform: uppercase;
-  line-height: 3.5em;
+  line-height: 2.5em;
+}
+header #tp-header .social-media {
+  float: left;
 }
 header #tp-header .social-media li {
   -webkit-border-radius: 30px;
@@ -135,6 +140,9 @@ header #tp-header .menu-button {
 header #bt-header {
   background: #fff8e7;
   height: 50px;
+}
+header #bt-header nav {
+  margin-left: 32%;
 }
 header #bt-header nav ul li {
   margin: 20px 10px 0;
