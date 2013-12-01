@@ -237,9 +237,15 @@ header #bt-header nav ul li ul li a {
   color: #333333;
 }
 /* HEADER END */
-/* INDEX CONTENT START */
+/* CONTENT START */
 div.content-wrapper {
   margin-top: 110px;
+  /* INDEX CONTENT START */
+  /* INDEX CONTENT END */
+  /* PROGRAM START*/
+  /* PROGRAM END*/
+  /* CONTACT START*/
+  /* CONTACT END*/
 }
 div.content-wrapper #steps-wrapper {
   float: left;
@@ -331,6 +337,9 @@ div.content-wrapper #events-wrapper .event p.link {
   text-align: right;
   padding: 10px 20px 0 0;
 }
+div.content-wrapper #events-wrapper .event p.link:hover {
+  cursor: pointer;
+}
 div.content-wrapper #events-wrapper .event p.link a {
   font-size: 1.2em;
   color: #b51e52;
@@ -338,7 +347,7 @@ div.content-wrapper #events-wrapper .event p.link a {
 div.content-wrapper #events-wrapper .event p.link a:hover {
   text-decoration: underline;
 }
-/* INDEX CONTENT END */
+/* CONTENT END */
 /* FOOTER START*/
 footer {
   float: left;
