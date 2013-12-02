@@ -530,6 +530,7 @@ div.content-wrapper #map #map-view {
 }
 div.content-wrapper #team {
   background: #fff8e7;
+  height: 450px;
 }
 div.content-wrapper #team ul li {
   float: left;
