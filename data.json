@@ -1,0 +1,6 @@
+[
+{"Id":"1","Name":"Bloor West/Main Office","Street":"533A Gladstone Avenue","PostalCode":"M6H 3J1","Extra":"","Latitude":"43.660037","Longitude":"-79.433747","Phone":"416-532-2824","Fax":"416-532-1065", "Email":"admin@workingwomencc.org"},
+{"Id":"2","Name":"The Victoria Park Hub","Street":"1527 Victoria Park Ave. East","PostalCode":"M1L 2T3","Extra":"2nd Floor","Latitude":"43.725036","Longitude":"-79.302743","Phone":"416-750-9600","Fax":"416-750-9606", "Email":"admin@victoriaparkhub.org"},
+{"Id":"3","Name":"North York East Centre","Street":"5 Fairview Mall Drive","PostalCode":"M2J 2Z1","Extra":"Suite 478","Latitude":"43.779217","Longitude":"-79.348231","Phone":"416-494-7978","Fax":"416-494-5266", "Email":"admin@workingwomencc.org"},
+{"Id":"4","Name":"North York West Centre","Street":"1 Yorkgate Blvd","PostalCode":"M3N 3A1","Extra":"Suite 206","Latitude":"43.756804","Longitude":"-79.520668","Phone":"416-491-5050 ext. 44795","Fax":"", "Email":"admin@workingwomencc.org"},
+]
