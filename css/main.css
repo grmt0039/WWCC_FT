@@ -647,6 +647,7 @@ footer #sign-up input[type="submit"] {
 }
 footer #sign-up input[type="submit"]:hover {
   background: #fff;
+  color: #000;
 }
 footer .social-media {
   float: left;
