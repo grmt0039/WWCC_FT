@@ -381,33 +381,33 @@ div.content-wrapper #progName h2 {
   color: #fff;
   font-size: 2.2em;
 }
-div.content-wrapper article {
+div.content-wrapper #program article {
   float: left;
   display: inline-block;
   width: 100%;
 }
-div.content-wrapper article img {
+div.content-wrapper #program article img {
   float: left;
   display: inline-block;
   width: 40%;
   padding: 50px 0;
 }
-div.content-wrapper article img:first-child {
+div.content-wrapper #program article img:first-child {
   padding-right: 10px;
 }
-div.content-wrapper article img:last-child {
+div.content-wrapper #program article img:last-child {
   padding-left: 10px;
 }
-div.content-wrapper article .article-wrapper {
+div.content-wrapper #program article .article-wrapper {
   float: left;
   display: inline-block;
   width: 60%;
   padding: 50px 0;
 }
-div.content-wrapper article .article-wrapper p {
+div.content-wrapper #program article .article-wrapper p {
   padding: 25px 0;
 }
-div.content-wrapper article .article-wrapper ul li {
+div.content-wrapper #program article .article-wrapper ul li {
   list-style: square url("../images/icons/bullet.svg");
   margin: 0 0 0 10px;
   list-style-position: inside;
@@ -415,17 +415,17 @@ div.content-wrapper article .article-wrapper ul li {
   font-size: 1.4em;
   padding: 3px 0;
 }
-div.content-wrapper article .article-wrapper ul li span {
+div.content-wrapper #program article .article-wrapper ul li span {
   color: #000;
 }
-div.content-wrapper article:last-child {
+div.content-wrapper #program article:last-child {
   background: #e5ddcb;
 }
-div.content-wrapper article:last-child p a {
+div.content-wrapper #program article:last-child p a {
   color: #b51e52;
   text-decoration: underline;
 }
-div.content-wrapper article:last-child p a:hover {
+div.content-wrapper #program article:last-child p a:hover {
   text-decoration: none;
 }
 div.content-wrapper #tab-buttons,
