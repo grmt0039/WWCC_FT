@@ -2,6 +2,7 @@
 @import 'includes/typography.less';
 @import 'includes/mixins.less';
 
+
 * {
   .box-sizing;
 }
@@ -17,8 +18,11 @@ body {
 
 .container {
   //max-width: 95%;
+  //min-width: 80%;
   max-width: 1170px;
+  //width: 95%;
   margin: 0 auto;
+  overflow:hidden;
 }
 
 .social-media{
@@ -88,6 +92,8 @@ header {
 	.top-container{
 		//padding-right: 30%;
 		//background: @dark-cream;
+		float: right;
+		overflow: hidden;
 	}  
 
 	ul li {
@@ -105,7 +111,8 @@ header {
 
 	.cta {
 		float: left;
-		margin-left: 33%;
+		//margin-left: 33%;
+
 
 		li {
 			width: 170px;
@@ -132,6 +139,7 @@ header {
 	}
 
 	.social-media{
+		float: right;
 		li{
 			padding: 7px;
 			margin-right: 8px;
@@ -151,7 +159,8 @@ header {
 
   	nav{
 
-  		margin-left: 36%;
+  		//margin-left: 36%;
+  		float: right;
 
   		//margin-top: 15px;
 	    //.boxmodel(60%);
@@ -293,14 +302,20 @@ div.content-wrapper {
 
 	#events-wrapper{
 		.boxmodel(100%);
-		span{
+		/*span{
 			float: left;
 			width: 90%;
 			height: 80px;
+		}*/
+
+		#calendar-wrapper{
+			.boxmodel(100%);
+			height: 80px;
+			padding: 0 1% 0 0;
 		}
 
 		svg{
-			margin: 10px 0 5px 1%;
+			margin: 10px 0 5px 0;
 			width: 8%;
 			float: right;
 
@@ -317,10 +332,14 @@ div.content-wrapper {
 		}
 
 		.event {
-			.boxmodel(33.3%);
+			.boxmodel(30%);
+			//width: 33.3%;
+			//float: left;
+			margin: 0 10px;
 
 			img{
 				margin-bottom: 15px;
+				width: 98%;
 			}
 
 			p.date{
@@ -331,7 +350,7 @@ div.content-wrapper {
 				font-size: 2.2em;
 				text-align: center;
 				line-height: 1.5em;
-				margin: 0 15px 100px 0;
+				margin: 0 15px 0 0;
 				float: left;
 				color: @ww-pink;
 			}
@@ -342,10 +361,15 @@ div.content-wrapper {
 				//line-height: 1.5em;
 				text-transform: uppercase;
 				padding: 0 0 25px 0;
+				width: 95%;
+				//margin-left: 23%;
 			}
 
 			p.blurb {
-
+				height: 100px;
+				//width: 95%;
+				width: 72%;
+				margin-left: 23%;
 			}
 
 			p.link {
@@ -697,95 +721,102 @@ footer {
 	background: #000;
 	margin-top:50px;
 	color: #fff;
-	font-size: 1.8em;
+	font-size: 1.4em;
 
 	#sign-up{
 		.boxmodel(50%);
+		
 		padding: 30px 0 0 0;
 
 
 		label {
-		      //text-align: right;
-		      
-		      .labelappend {
-		        display: inline-block;
-		        //background:#ccc;
-		        padding: 5px;
-		        width:40%;
-		        color: #fff;
-		      }
-		      
-		      input {
-		        padding: 5px;
-		        width: 40%;
-		        border: 1px solid darken(@light-cream, 10%);
-		        background: lighten(@light-cream, 10%);
-		        color: @dark-grey;
-		        font-family: @bodyfontfamily;
-		        -webkit-appearance: none;
-		        //font-size: 1.2em;
-		      }
+	      //text-align: right;
+	      
+	      .labelappend {
+	        display: inline-block;
+	        //background:#ccc;
+	        padding: 5px;
+	        width:40%;
+	        color: #fff;
+	        font-size: 1em;
+	      }
+	      
+	      input {
+	        padding: 5px;
+	        width: 40%;
+	        border: 1px solid darken(@light-cream, 10%);
+	        background: lighten(@light-cream, 10%);
+	        color: @dark-grey;
+	        font-family: @bodyfontfamily;
+	        -webkit-appearance: none;
+	        //font-size: 1.2em;
+	      }
 
-		      input {
-		        margin: 10px 0 10px -5px;
-		      }
+	      input {
+	        margin: 10px 0 10px 0;
+	      }
 
-		    }
-		    input[type="submit"] {
-		      //.widthfloat(70%);
-		      width: 15%;
-		      height: 40px;
-		      float: right;
-		      /*margin: 40px 5% 0 0;*/
-		      margin: 0 0 0 0;
-		      .border-radius();
-		      padding: 5px;
-		      border: 1px #000 solid;
-		      background: @ww-pink;
-		      font-size: 1em;
-		      font-family: @bodyfontfamily;
-		      cursor: pointer;
-		      color: #fff;
-		      text-transform:uppercase;
+		}
+	    input[type="submit"] {
+	      //.widthfloat(70%);
+	      width: 15%;
+	      height: 40px;
+	      float: right;
+	      /*margin: 40px 5% 0 0;*/
+	      margin: 0 2% 0 0;
+	      .border-radius();
+	      padding: 5px;
+	      border: 1px #000 solid;
+	      background: @ww-pink;
+	      font-size: 1em;
+	      font-family: @bodyfontfamily;
+	      cursor: pointer;
+	      color: #fff;
+	      text-transform:uppercase;
 
-		      &:hover{
-		        background: #fff;
-		        color: #000;
-		      }
+	      &:hover{
+	        background: #fff;
+	        color: #000;
+	      }
 
 
-		    }
+	    }
 
 
 
 	}
 
-	.social-media{
+	#smedia{
 		.boxmodel(50%);
-		padding: 0 0 0 15%;
-		//clear:both;
+		.social-media{
+			//.boxmodel(50%);
+			//padding: 0 0 0 15%;
+			//width: 33%;
+			float: right;
+			//clear:both;
 
-		li{
-			margin-bottom: 20px;
-		}
-
-		li:last-child{
-			.border-radius(0px,0px,0px,0px);
-			width: 170px;
-			height: 60px;
-			background: none;
-			padding: 10px 0 0 0;
-			margin: 0;
-
-			svg:hover{
-				.unway{
-					fill: red;
-				}
+			li{
+				margin-bottom: 20px;
 			}
 
-			img {
+			li:last-child{
+				.border-radius(0px,0px,0px,0px);
+				width: 170px;
 				height: 60px;
-				width: 60px;
+				background: none;
+				padding: 10px 0 0 0;
+				margin: 0;
+
+				svg:hover{
+					.unway{
+						fill: red;
+					}
+				}
+
+				img {
+					height: 60px;
+					width: 60px;
+				}
 			}
 		}
 	}
@@ -817,10 +848,13 @@ footer {
 
 	#copyright{
 		text-align: center;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		.boxmodel(100%);
 		padding-bottom: 20px;
 	}
 }
 
 /* FOOTER END */
+
+
+@import 'includes/queries.less';

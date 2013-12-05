@@ -1,0 +1,280 @@
+/* MEDIA QUERY 650 - 1024 PX for tablet and desktop */
+@media screen and (min-width:750px) and (max-width:909px){
+	
+	.container {
+		//max-width: 95%;
+		min-width: 80%;
+		max-width: 909px;
+		//width: 100%;
+		margin: 0 auto;
+		overflow:hidden;
+	}
+
+	header{
+
+		#tp-header{
+			.cta{
+
+				li {
+					width: 130px;
+					height: 40px;
+					margin-right: 15px;
+
+					a{
+						font-size: 1.6em;
+						line-height: 2.5em;
+					}
+				}
+
+			}
+		}
+
+		#bt-header{
+			nav{
+				//width: 750px;
+				ul li{
+					padding: 0 8px;
+					font-size: 1.6em;
+				}
+			}
+		}
+	}
+
+	/* CONTENT START */
+	div.content-wrapper {
+		margin-top: 110px;
+		.boxmodel(100%);
+
+		/* INDEX CONTENT START */
+		#steps-wrapper{
+			ul#steps {
+				padding: 20px 150px;
+
+				li {
+					
+					a{
+
+						svg{
+							//margin-left: 25%;
+							height: 50%;
+							width: 50%;
+						}
+
+						font-size: 0.7em;
+						
+					}
+				}
+			}
+		}
+
+
+		#mission-wrapper{ 
+			p{
+				padding: 15px 5%;
+				font-size: 1.7em;
+			}
+		}
+
+		#events-wrapper{
+			#calendar-wrapper{
+				padding: 0 5% 0 0;
+			}
+
+			/*svg{
+				margin: 10px 2% 5px 1%;
+				width: 8%;
+
+			}*/
+
+
+			.event {
+				
+				img{
+					margin-bottom: 15px;
+					width: 98%;
+				}
+
+				p.date{
+					height: 50%;
+					width: 45px;
+					font-size: 1.8em;
+					line-height: 1.5em;
+					margin: 0 10px 0 0;
+				}
+
+				h3 {
+					font-size: 1.8em;
+					padding: 0 0 25px 0;
+					width: 98%;
+				}
+
+				p.blurb {
+					height: 140px;
+					//width: 90%;
+					width: 72%;
+					margin-left: 23%;
+					font-size: 1.5em;
+				}
+
+				p.link {
+
+					padding: 5px 10px 0 0;
+
+					a {
+						font-size: 1.1em;
+					}
+				}
+			}
+		}
+	}
+	/* INDEX CONTENT END */
+
+
+
+	/* FOOTER START*/
+	footer {
+		margin-top:50px;
+		font-size: 1.4em;
+
+		#sign-up{
+			.boxmodel(100%);
+			
+			padding: 20px 0 0 0;
+
+
+			label {
+		      //text-align: right;
+		      
+		      .labelappend {
+		        display: inline-block;
+		        //background:#ccc;
+		        padding: 5px;
+		        width:40%;
+		        color: #fff;
+		        font-size: 1em;
+		      }
+		      
+		      input {
+		        padding: 5px;
+		        width: 40%;
+		        border: 1px solid darken(@light-cream, 10%);
+		        background: lighten(@light-cream, 10%);
+		        color: @dark-grey;
+		        font-family: @bodyfontfamily;
+		        -webkit-appearance: none;
+		        //font-size: 1.2em;
+		      }
+
+		      input {
+		        margin: 10px 0 10px 0;
+		      }
+
+			}
+		    input[type="submit"] {
+		      //.widthfloat(70%);
+		      width: 15%;
+		      height: 40px;
+		      float: right;
+		      /*margin: 40px 5% 0 0;*/
+		      margin: 0 2% 0 0;
+		      .border-radius();
+		      padding: 5px;
+		      border: 1px #000 solid;
+		      background: @ww-pink;
+		      font-size: 1em;
+		      font-family: @bodyfontfamily;
+		      cursor: pointer;
+		      color: #fff;
+		      text-transform:uppercase;
+
+		      &:hover{
+		        background: #fff;
+		        color: #000;
+		      }
+
+
+		    }
+
+
+
+		}
+
+		#smedia{
+			.boxmodel(100%);
+
+			.social-media{
+				float: none;
+				width:100%;
+				text-align:center;
+
+				li{
+					margin-bottom: 20px;
+				}
+
+				li:last-child{
+					.border-radius(0px,0px,0px,0px);
+					width: 170px;
+					height: 60px;
+					background: none;
+					padding: 10px 0 0 0;
+					margin: 0;
+
+					svg:hover{
+						.unway{
+							fill: red;
+						}
+					}
+
+					img {
+						height: 60px;
+						width: 60px;
+					}
+				}
+			}
+		}
+
+		#footer-links{
+			text-align:center;
+			margin: 20px 0;
+			.boxmodel(100%);
+
+			li{
+				display:inline-block;
+				border-right: 1px #fff solid;
+				padding: 0 20px;
+
+				a{
+					color:#fff;
+					text-transform:uppercase;
+
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+
+				&:last-child{
+					border-right: 0;
+				}
+			}
+		}
+
+		#copyright{
+			text-align: center;
+			font-size: 0.9em;
+			.boxmodel(100%);
+			padding-bottom: 20px;
+		}
+}
+
+/* FOOTER END */
+
+
+}
+
+
+/*@media screen and (max-width:749px){
+	
+}*/
+
+
+
