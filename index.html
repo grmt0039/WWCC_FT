@@ -21,9 +21,11 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
   <script src="js/hoverIntent.js" type="text/javascript"></script>
   <script src="js/superfish.js" type="text/javascript"></script>
-  <script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
+  <!--<script type="text/javascript" src="js/supersized.core.3.2.1.min.js"></script>-->
+  <script src="js/jquery-imagefill.js"></script>
+  <!--<script src="js/jquery.jcarousel.min.js" type="text/javascript"></script>
   <script src="js/jquery.pikachoose.min.js" type="text/javascript"></script>
-  <script src="js/jquery.touchswipe.min.js" type="text/javascript"></script>
+  <script src="js/jquery.touchswipe.min.js" type="text/javascript"></script>-->
 
 
   <script>
@@ -34,7 +36,48 @@
         cssArrows:  false
       });
 
-      $("#pikame").PikaChoose();
+      //$("#pikame").PikaChoose();
+
+
+      /*jQuery(function($){
+        
+        $.supersized({
+        
+          // Functionality
+          start_slide         :   0,      // Start slide (0 is random)
+          new_window          :   0,      // Image links open in new window/tab
+          image_protect       :   1,      // Disables image dragging and right click with Javascript
+                                 
+          // Size & Position               
+          min_width           :   0,      // Min width allowed (in pixels)
+          min_height          :   0,      // Min height allowed (in pixels)
+          vertical_center     :   1,      // Vertically center background
+          horizontal_center   :   1,      // Horizontally center background
+          fit_always          :   0,      // Image will never exceed browser width or height (Ignores min. dimensions)
+          fit_portrait        :   1,      // Portrait images will not exceed browser height
+          fit_landscape       :   0,      // Landscape images will not exceed browser width
+                                 
+          // Components
+          slides              :   [     // Slideshow Images
+                                      {image : 'images/hero/hero.jpg', title : 'Image Credit: stock photo'}
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg', title : 'Image Credit: Maria Kazvan'},  
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg', title : 'Image Credit: Maria Kazvan'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brook Shaden'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brook Shaden'},
+                                      {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-3.jpg', title : 'Image Credit: Brook Shaden'}
+                                  ]
+          
+        });
+      });*/
+
+
+      //$('#hero').imageFill(); 
+      // image stretches to fill container
+
+
     });
 
   </script>
@@ -122,10 +165,19 @@
   
     <div class="content-wrapper">
 
-      <div id="hero">
-        <ul id="pikame">
+      <div id="hero-wrapper">
+        <!--<ul id="pikame">
           <li></li>
-        </ul>
+        </ul>-->
+        <!--<div id="supersized-loader"></div>
+        <div id="supersized"></div>-->
+        <div id="hero">
+          <div><img src="images/hero/hero.jpg" alt=""></div>
+        </div>
+        <div id="hero-blurb">
+          <p><a href="#">&#34;The workshops helped me to find a job and secure day-care for my son.&#34;  -  Sanjana</a></p>
+        </div>
+        
 
       </div>
 

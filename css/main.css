@@ -199,6 +199,10 @@ header #bt-header {
 }
 header #bt-header nav {
   float: right;
+  /*ul{
+	    	z-index: 10000000000;
+			position: relative;
+	    }*/
 }
 header #bt-header nav ul li {
   height: 50px;
@@ -256,6 +260,8 @@ div.content-wrapper {
   float: left;
   display: inline-block;
   width: 100%;
+  /* HERO START*/
+  /* HERO END*/
   /* INDEX CONTENT START */
   /* INDEX CONTENT END */
   /* PROGRAM START*/
@@ -270,6 +276,90 @@ div.content-wrapper {
 		height: 500px;*/
   /*Map Section*/
   /* CONTACT END*/
+}
+div.content-wrapper #hero-wrapper {
+  position: relative;
+  height: 350px;
+  /*background: url(../images/hero/hero.jpg) no-repeat;
+		background-size: 200% 100%;*/
+  /*#supersized-loader { 
+			position:absolute; 
+			top:50%; 
+			left:50%; 
+			z-index:0; 
+			width:60px; 
+			height:60px; 
+			margin:-30px 0 0 -30px; 
+			text-indent:-999em; 
+			background:url(../img/progress.gif) no-repeat center center;
+		}
+
+		#supersized { 
+			position:fixed; 
+			left:0; top:0; 
+			overflow:hidden; 
+			z-index:-999; 
+			//height:100%; 
+			height:350px; 
+			width:100%;
+
+			img { 
+				width:auto; 
+				height:auto; 
+				position:relative; 
+				outline:none; 
+				border:none; 
+			}
+
+			a { 
+				z-index:-30; 
+				position:fixed; 
+				overflow:hidden; 
+				top:0; 
+				left:0; 
+				width:100%; 
+				height:100%; 
+				background:#111; 
+				display:block; 
+			}
+
+			a.image-loading { 
+				background:#111 url(../img/progress.gif) no-repeat center center; 
+				width:100%; 
+				height:100%; 
+			}
+		}*/
+  /*#supersized{
+
+			img{
+				margin-left: -30%;
+			}
+		}*/
+}
+div.content-wrapper #hero-wrapper #hero {
+  overflow: hidden;
+  width: 100%;
+}
+div.content-wrapper #hero-wrapper #hero img {
+  height: 350px;
+  width: auto;
+}
+div.content-wrapper #hero-wrapper #hero-blurb {
+  /*background:#111; 
+			background:url('img/bg-black.png'); 
+			width:100%; 
+			height:100px; 
+			margin:30px auto; 
+			text-align:left;*/
+  position: absolute;
+  bottom: 3%;
+  left: 10%;
+}
+div.content-wrapper #hero-wrapper #hero-blurb a {
+  display: block;
+  background: rgba(255, 248, 231, 0.6);
+  padding: 10px;
+  font-family: "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 div.content-wrapper #steps-wrapper {
   float: left;
@@ -319,6 +409,7 @@ div.content-wrapper #events-wrapper {
   float: left;
   display: inline-block;
   width: 100%;
+  background: #fff;
   /*span{
 			float: left;
 			width: 90%;
@@ -708,6 +799,7 @@ footer #sign-up label .labelappend {
   width: 40%;
   color: #fff;
   font-size: 1em;
+  text-align: right;
 }
 footer #sign-up label input {
   padding: 5px;
@@ -820,6 +912,57 @@ footer #copyright {
   padding-bottom: 20px;
 }
 /* FOOTER END */
+/* MEDIA QUERY FOR IMAGE */
+@media screen and (min-width: 750px) and (max-width: 1170px) {
+  div.content-wrapper #hero-wrapper {
+    /*used to crop the image as modified from PDF link*/
+  }
+  div.content-wrapper #hero-wrapper #hero div {
+    margin: 0 0 0 -30%;
+  }
+  div.content-wrapper #hero-wrapper #hero img {
+    width: 110%;
+  }
+}
+/*@media screen and (min-width:950px) and (max-width:999px){
+	div.content-wrapper {
+	#hero {
+		div {
+			margin: 0 0 0 -50%;
+
+		}
+	}
+	}
+}
+
+@media screen and (min-width:750px) and (max-width:949px){
+	div.content-wrapper {
+	#hero {
+		div {
+			margin: 0 0 0 -50%;
+
+		}
+
+		img{
+			width: 114%;
+			//height: 200%;
+		}
+	}
+	}
+}*/
+/***** HERO WRAPPER *****/
+/*#hero-wrapper {
+		height: 186px;
+	}
+	
+	#hero-wrapper img {
+		width: 114%;
+		height: 186px;
+	}
+	
+	#hero-wrapper div {
+		margin: 0 0 0 -6em;
+	}*/
 /* MEDIA QUERY 650 - 1024 PX for tablet and desktop */
 @media screen and (min-width: 750px) and (max-width: 909px) {
   .container {
