@@ -299,34 +299,39 @@
 
 	header{
 		#tp-header {
-		  	height: 95px;
+		  	height: 90px;
 		  	
 		  	h1 {
-			    height: 80px;
-			    background-size: 80%;
-			    //.border-radius(0px 0px 0px 0px);
+			    height: 70px;
+			    width:100%;
+			    background-size: contain;
+			    background-position: center;
+			    //background-size: 80%;
 			    
 			    a {
-			    	height: 80px;
+			    	height: 70px;
+			    	//margin-left:50%;
 			    }
 
 			}
 
 			.top-container{
 				//float: right;
+				width:100%;
+				margin-top:17px;
 				
 			}  
 
 			.cta {
-				//float: none;
-				margin-top: 20px;
+				float: right;
+				//margin-top: 10px;
 
 
 				li {
-					width: 150px;
-					height: 50px;
-					line-height: 55px;
-					margin-right: 30px;
+					width: 117px;
+					height: 38px;
+					line-height: 33px;
+					margin-right: 10px;
 					//padding: 0 auto;
 					text-align: center;
 
@@ -336,7 +341,7 @@
 
 					a{
 						color: #fff;
-						font-size: 1.8em;
+						font-size: 1.6em;
 						text-transform: uppercase;
 						line-height: 2.3em;
 
@@ -358,8 +363,8 @@
 				display: block;
 		      	.boxmodel(100%);
 		     	height: 32px;
-		      	text-align: center;
-		      	margin: 15px 0 0 0;
+		      	text-align: left;
+		      	margin: 20px 0 0 10px;
 		      
 		      	&:hover{
 		        	cursor:pointer;
@@ -468,6 +473,7 @@
 	div.content-wrapper {
 		margin-top: 110px;
 
+		/* INDEX CONTENT START */
 		/* HERO START*/
 		#hero{
 			background-position: 60% 0%;
@@ -488,7 +494,7 @@
 		/* HERO END*/
 
 
-		/* INDEX CONTENT START */
+		/* STEPS START */
 		#steps-wrapper{
 			background: @dark-cream;
 			
