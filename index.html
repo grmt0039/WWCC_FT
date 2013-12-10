@@ -40,6 +40,18 @@
         $( "#about-links" ).find( "ul" ).slideToggle();
       });
 
+      $("#program-links").click(function(){
+        $( "#program-links" ).find( "ul" ).slideToggle();
+      });
+
+      $("#news-links").click(function(){
+        $( "#news-links" ).find( "ul" ).slideToggle();
+      });
+
+      $("#associate-links").click(function(){
+        $( "#associate-links" ).find( "ul" ).slideToggle();
+      });
+
 
       /*$('ul.sf-menu').superfish({
         delay: 200,
@@ -109,18 +121,18 @@
           <h1 class="logo"><a href="index.php">Working Women Community Centre</a></h1>
           
           <div class="top-container">
-          <ul class="cta">
-            <li><a href="#volunteer">Volunteer</a></li>
-            <li><a href="#donate">Donate</a></li>
-          </ul>
+            <ul class="cta">
+              <li><a href="#volunteer">Volunteer</a></li>
+              <li><a href="#donate">Donate</a></li>
+            </ul>
 
-          <ul class="social-media">
-            <li><a href="#facebook"><img src="images/media/icon-facebook.png" alt="Follow us on Facebook"/></a></li>
-            <li><a href="#twitter"><img src="images/media/icon-twitter.png" alt="Follow us on Twitter"/></a></li>
-            <li><a href="#youtube"><img src="images/media/icon-youtube.png" alt="Watch us on YouTube"/></a></li>
-            <li><a href="#linkedin"><img src="images/media/icon-linkedin.png" alt="Find us on LinkedIn"/></a></li>
-          </ul>
-        </div>
+            <ul class="social-media">
+              <li><a href="#facebook"><img src="images/media/icon-facebook.png" alt="Follow us on Facebook"/></a></li>
+              <li><a href="#twitter"><img src="images/media/icon-twitter.png" alt="Follow us on Twitter"/></a></li>
+              <li><a href="#youtube"><img src="images/media/icon-youtube.png" alt="Watch us on YouTube"/></a></li>
+              <li><a href="#linkedin"><img src="images/media/icon-linkedin.png" alt="Find us on LinkedIn"/></a></li>
+            </ul>
+          </div>
 
         </div>
       </div>
@@ -139,11 +151,11 @@
                     <li><a href="#our-history">Our History</a></li>
                 </ul>
               </li>
-              <li><a href="programs.php">Programs &#38; Services</a>
+              <li id="program-links"><a href="#programs">Programs &#38; Services</a>
                 <ul>
                     <li><a href="#program">Action for Neighbourhood Change</a></li>
                     <li><a href="#program">Community Engagement and Leadership</a></li>
-                    <li><a href="#employment-programs">Employment Programs</a></li>
+                    <li><a href="#programs.php">Employment Programs</a></li>
                     <li><a href="#program">HIPPY</a></li>
                     <li><a href="#program">LINC</a></li>
                     <li><a href="#program">On Your Mark</a></li>
@@ -152,14 +164,14 @@
                     <li><a href="#program">The Victoria Park Hub</a></li>
                 </ul>
               </li>
-              <li><a href="#news">News &#38; Events</a>
+              <li id="news-links"><a href="#news">News &#38; Events</a>
                 <ul>
                     <li><a href="#news-events">News</a></li>
                     <li><a href="#calendar">Calendar</a></li>
                     <li><a href="#event-galleries">Event Galleries</a></li>
                 </ul>
               </li>
-              <li><a href="#our-associates">Our Associates</a>
+              <li id="associate-links"><a href="#our-associates">Our Associates</a>
                 <ul>
                     <li><a href="#governance">Governance</a></li>
                     <li><a href="#patrons">Patrons</a></li>
