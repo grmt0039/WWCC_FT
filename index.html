@@ -31,6 +31,16 @@
   <script>
 
     $(document).ready(function() {
+      
+      $(".menu-button").click(function(){
+        $("nav").slideToggle();
+      });
+
+      $("#about-links").click(function(){
+        $( "#about-links" ).find( "ul" ).slideToggle();
+      });
+
+
       /*$('ul.sf-menu').superfish({
         delay: 200,
         cssArrows:  false
@@ -117,17 +127,20 @@
 
       <div id="bt-header">
         <div class="container">
+
+          <div class="menu-button"><img src="images/icons/menu.svg" alt="Menu"></div>
+
           <nav>
             <ul>
-              <li><a href="#about">About Us</a>
-                <ul class="short">
+              <li id="about-links"><a href="#about">About Us</a>
+                <ul>
                     <li><a href="#about">What We Do</a></li>
                     <li><a href="#why-give">Why Give</a></li>
                     <li><a href="#our-history">Our History</a></li>
                 </ul>
               </li>
               <li><a href="programs.php">Programs &#38; Services</a>
-                <ul class="long">
+                <ul>
                     <li><a href="#program">Action for Neighbourhood Change</a></li>
                     <li><a href="#program">Community Engagement and Leadership</a></li>
                     <li><a href="#employment-programs">Employment Programs</a></li>

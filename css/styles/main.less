@@ -157,6 +157,10 @@ header {
 	  	background: @light-cream;
 	  	height: 50px;
 
+	  	.menu-button{
+	  		display:none;
+	  	}
+
 	  	nav{
 	  		float: right;
 
@@ -187,10 +191,6 @@ header {
 				    font-size: 1.8em;
 		    		border-right: 1px solid @dark-cream;
 
-		    		&:nth-child(1){
-		    			
-		    		}
-
 					&:hover{
 						//background: #ccc;
 						border-bottom: 3px solid @ww-pink;
@@ -210,7 +210,7 @@ header {
 
 					a{
 						display:block;
-				  		padding: 25px 20px;
+				  		padding: 25px 10px;
 				  		//color: #757575;
 				  		text-decoration: none;
 
@@ -239,14 +239,13 @@ header {
 	  					position: relative;
 	  					display: block;
 				    	height: 47px;
-				    	width: 202px;
+				    	width: 100%;
 				    	margin: 0;
 				    	//padding: 10px 5px 10px 15px;
 				    	padding:0;
 				    	line-height: 0px;
 				    	margin: 0;
-				    	//font-size: 0.8em;
-				    	font-size: 14px;
+				    	font-size: 0.8em;
 				    	border: 0;
 				    	border-bottom: 1px solid @dark-cream;
 
@@ -257,7 +256,7 @@ header {
 					    }
 
 					    &:last-child {
-					      border-bottom: 0;
+					      //border-bottom: 0;
 					    }
 
 	  					a{
@@ -270,7 +269,7 @@ header {
 			  		}
 				}
 
-				ul.short{
+				/*ul.short{
 		  			li{
 			  			width:160px;
 			  		}
@@ -280,63 +279,9 @@ header {
 			  		li{
 			  			width:350px;
 			  		}
-			  	}
+			  	}*/
 		  	}
 	  	}
-	  	
-
-	  	/*nav ul:after{
-	  		content:"";
-	  		clear:both;
-	  		display:block;
-	  	}
-
-	  	nav ul li {
-	  		float: left;
-	  	}
-
-	  	nav ul li:hover {
-	  		background: #ccc;
-	  	}
-
-	  	nav ul li:hover a {
-	  		//color: #fff;
-	  	}
-
-	  	nav ul li a {
-	  		display:block;
-	  		padding: 25px 40px;
-	  		color: #757575;
-	  		text-decoration: none;
-	  	}
-
-
-	  	nav ul ul {
-	  		display: none;
-	  		position:absolute;
-	  		top:100%;
-
-	  		z-index:999999999;
-	  	}
-
-	  	nav ul ul li {
-	  		float:none;
-	  		position: relative;
-	  	}
-
-	  	nav ul ul li a {
-	  		color: #ccc;
-	  	}
-
-	  	nav ul ul li a:hover {
-	  		background: #aaa;
-	  	}
-
-	  	nav ul li:hover > ul {
-	  		display: block;
-	  	}*/
-
-
 		
 	}
 }

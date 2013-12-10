@@ -195,56 +195,9 @@ header #tp-header .menu-button {
 header #bt-header {
   background: #fff8e7;
   height: 50px;
-  /*nav ul:after{
-	  		content:"";
-	  		clear:both;
-	  		display:block;
-	  	}
-
-	  	nav ul li {
-	  		float: left;
-	  	}
-
-	  	nav ul li:hover {
-	  		background: #ccc;
-	  	}
-
-	  	nav ul li:hover a {
-	  		//color: #fff;
-	  	}
-
-	  	nav ul li a {
-	  		display:block;
-	  		padding: 25px 40px;
-	  		color: #757575;
-	  		text-decoration: none;
-	  	}
-
-
-	  	nav ul ul {
-	  		display: none;
-	  		position:absolute;
-	  		top:100%;
-
-	  		z-index:999999999;
-	  	}
-
-	  	nav ul ul li {
-	  		float:none;
-	  		position: relative;
-	  	}
-
-	  	nav ul ul li a {
-	  		color: #ccc;
-	  	}
-
-	  	nav ul ul li a:hover {
-	  		background: #aaa;
-	  	}
-
-	  	nav ul li:hover > ul {
-	  		display: block;
-	  	}*/
+}
+header #bt-header .menu-button {
+  display: none;
 }
 header #bt-header nav {
   float: right;
@@ -252,6 +205,17 @@ header #bt-header nav {
 header #bt-header nav ul {
   position: relative;
   display: inline-table;
+  /*ul.short{
+		  			li{
+			  			width:160px;
+			  		}
+			  	}
+
+			  	ul.long{
+			  		li{
+			  			width:350px;
+			  		}
+			  	}*/
 }
 header #bt-header nav ul:after {
   content: "";
@@ -277,7 +241,7 @@ header #bt-header nav ul li:last-child {
 }
 header #bt-header nav ul li a {
   display: block;
-  padding: 25px 20px;
+  padding: 25px 10px;
   text-decoration: none;
 }
 header #bt-header nav ul li a:hover {
@@ -299,11 +263,11 @@ header #bt-header nav ul ul li {
   position: relative;
   display: block;
   height: 47px;
-  width: 202px;
+  width: 100%;
   padding: 0;
   line-height: 0px;
   margin: 0;
-  font-size: 14px;
+  font-size: 0.8em;
   border: 0;
   border-bottom: 1px solid #e5ddcb;
 }
@@ -312,17 +276,8 @@ header #bt-header nav ul ul li:hover {
   border-bottom: 1px solid #e5ddcb;
   background: #fceff4;
 }
-header #bt-header nav ul ul li:last-child {
-  border-bottom: 0;
-}
 header #bt-header nav ul ul li a {
   color: #333333;
-}
-header #bt-header nav ul ul.short li {
-  width: 160px;
-}
-header #bt-header nav ul ul.long li {
-  width: 350px;
 }
 /* HEADER END */
 /* CONTENT START */
@@ -955,64 +910,6 @@ footer #copyright {
   padding-bottom: 20px;
 }
 /* FOOTER END */
-/* MEDIA QUERY FOR IMAGE */
-/*@media screen and (min-width:750px) and (max-width:1170px){
-	div.content-wrapper {
-		#hero-wrapper{
-			
-			#hero {
-				div {
-					margin: 0 0 0 -30%;
-
-				}
-
-				img{
-					width: 110%;
-					//height: 200%;
-				}
-			}
-		}
-	}
-}*/
-/*@media screen and (min-width:950px) and (max-width:999px){
-	div.content-wrapper {
-	#hero {
-		div {
-			margin: 0 0 0 -50%;
-
-		}
-	}
-	}
-}
-
-@media screen and (min-width:750px) and (max-width:949px){
-	div.content-wrapper {
-	#hero {
-		div {
-			margin: 0 0 0 -50%;
-
-		}
-
-		img{
-			width: 114%;
-			//height: 200%;
-		}
-	}
-	}
-}*/
-/***** HERO WRAPPER *****/
-/*#hero-wrapper {
-		height: 186px;
-	}
-	
-	#hero-wrapper img {
-		width: 114%;
-		height: 186px;
-	}
-	
-	#hero-wrapper div {
-		margin: 0 0 0 -6em;
-	}*/
 /* MEDIA QUERY 750 - 1024 PX for tablet and desktop */
 @media screen and (min-width: 750px) and (max-width: 909px) {
   .container {
@@ -1030,9 +927,18 @@ footer #copyright {
     font-size: 1.6em;
     line-height: 2.5em;
   }
+  header #bt-header nav ul {
+    position: static;
+  }
   header #bt-header nav ul li {
-    padding: 0 8px;
-    font-size: 1.6em;
+    font-size: 1.5em;
+  }
+  header #bt-header nav ul li a {
+    padding: 25px 5px;
+    text-decoration: none;
+  }
+  header #bt-header nav ul li a:hover {
+    color: #000;
   }
   /* CONTENT START */
   div.content-wrapper {
@@ -1227,6 +1133,98 @@ footer #copyright {
   }
   /* FOOTER END */
 }
-/*@media screen and (max-width:749px){
-	
-}*/
+/* MEDIA QUERY FOR SMALL TABLET AND PHONE*/
+@media screen and (max-width: 749px) {
+  .container {
+    max-width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  header #tp-header {
+    height: 95px;
+  }
+  header #tp-header h1 {
+    height: 80px;
+  }
+  header #tp-header h1 a {
+    height: 80px;
+  }
+  header #tp-header .cta {
+    margin-top: 20px;
+  }
+  header #tp-header .social-media {
+    display: none;
+  }
+  header #bt-header .menu-button {
+    display: block;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    text-align: center;
+    margin: 15px 0 0 0;
+  }
+  header #bt-header .menu-button:hover {
+    cursor: pointer;
+  }
+  header #bt-header .container {
+    max-width: 100%;
+  }
+  header #bt-header nav {
+    float: none;
+    width: 100%;
+    margin-top: 45px;
+  }
+  header #bt-header nav ul {
+    padding: 3px 0;
+    display: block;
+    position: static;
+  }
+  header #bt-header nav ul li {
+    display: block;
+    float: none;
+    padding: 0;
+    width: 100%;
+    border-right: 0;
+    background: #fffcf6;
+    line-height: 0.6em;
+  }
+  header #bt-header nav ul li:hover {
+    background: #f5c3d5;
+  }
+  header #bt-header nav ul li > ul {
+    display: none;
+  }
+  header #bt-header nav ul li a {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ccbc98;
+    padding: 20px 0;
+  }
+  header #bt-header nav ul ul {
+    position: static;
+    top: 0;
+    z-index: 0;
+  }
+  header #bt-header nav ul ul li {
+    float: none;
+    position: relative;
+    display: block;
+    height: 47px;
+    width: 100%;
+    padding: 0;
+    line-height: 0px;
+    margin: 0;
+    font-size: 0.8em;
+    border: 0;
+    border-bottom: 1px solid #e5ddcb;
+  }
+  header #bt-header nav ul ul li:hover {
+    border-left: 0;
+    border-bottom: 1px solid #e5ddcb;
+    background: #fceff4;
+  }
+  header #bt-header nav ul ul li a {
+    color: #333333;
+  }
+}
