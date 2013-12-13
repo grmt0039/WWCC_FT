@@ -19,23 +19,23 @@
           
           <!--Section Form starts-->
           <section id="form">
-            <form>
+            <form action="thankyou.php" method="post">
               <p>* All fields are required.</p>
               <label>
                 <div class="labelappend">First Name</div>
-                <input type="text">
+                <input type="text" name="firstname">
               </label>
               <label>
                 <div class="labelappend">Last Name</div>
-                <input type="text">
+                <input type="text" name="lastname">
               </label>
               <label>
                 <div class="labelappend">Email</div>
-                <input type="text">
+                <input type="text" name="email">
               </label>
               <label>
                 <div class="labelappend">Comments</div>
-                <textarea></textarea>
+                <textarea name="comments"></textarea>
               </label>
               <input type="submit" value="Send Message">
             </form>

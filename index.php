@@ -15,21 +15,18 @@
             <li>
               <a href="#about">
                 <?php include("images/steps/icon-whatwedo.svg"); ?>
-                <!--<img src="images/steps/icon-whatwedo.svg" alt="What we do"/>-->
                 <h2>What we do</h2>
               </a>
             </li>
             <li>
               <a href="#volunteer">
                 <?php include("images/steps/icon-volunteer.svg"); ?>
-                <!--<img src="images/steps/icon-volunteer.svg" alt="Volunteer"/>-->
                 <h2>Volunteer</h2>
               </a>
             </li>
             <li>
-              <a href="#about">
-                <?php include("images/steps/icon-volunteer.svg"); ?>
-                <!--<img src="images/steps/icon-donate.svg" alt="Donate">-->
+              <a href="#donate">
+                <?php include("images/steps/icon-donate.svg"); ?>
                 <h2>Donate</h2>
               </a>
             </li>
@@ -50,7 +47,6 @@
           <div id="calendar-wrapper">
             <a href="#calendar"><?php include("images/steps/icon-calendar.svg"); ?></a>
           </div>
-          <!--<img id="calendar" src="images/calendar/icon-calendar.svg" alt="Event calendar">-->
           
           <article class="event">
             <img src="images/calendar/calendar1.jpg">
@@ -76,7 +72,7 @@
 
         </div>
       </section> 
-       
+
     </div>
 
   <?php include("includes/footer.php"); ?>

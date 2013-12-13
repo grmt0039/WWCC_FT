@@ -41,7 +41,7 @@
                 <ul>
                     <li><a href="#program">Action for Neighbourhood Change</a></li>
                     <li><a href="#program">Community Engagement and Leadership</a></li>
-                    <li><a href="#programs.php">Employment Programs</a></li>
+                    <li><a href="employee.php">Employment Programs</a></li><!--This is one of the pages styled-->
                     <li><a href="#program">HIPPY</a></li>
                     <li><a href="#program">LINC</a></li>
                     <li><a href="#program">On Your Mark</a></li>
