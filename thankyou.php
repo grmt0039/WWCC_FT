@@ -3,7 +3,7 @@
 	
 	<?php 
             $to="tanyargrimes@gmail.com";
-            $subject="Inquiry";
+            $subject="WWCC Inquiry";
             $message= $_POST["firstname"]." ".$_POST["lastname"]." has sent the following message: \r\n"."\r\n";
             $message.= $_POST["comments"]."\r\n"."\r\n";
             $message.= "They can be reached at: ".$_POST["email"]."\r\n"."\r\n";
