@@ -200,7 +200,11 @@
         document.getElementById("email").innerHTML = "<a href='mailto:"+data.locations[pos].Email+"'>"+data.locations[pos].Email+"</a>";
         document.getElementById("directions").innerHTML = "<a href='https://maps.google.com/maps?daddr="+data.locations[pos].Street+" Toronto,ON,CA ("+data.locations[pos].Name+")' target='_blank'>GET DIRECTIONS</a>";
 
-        document.getElementById("map-results").style.zIndex=99999999;
+        var closeBtn = document.getElementById("btn-close");
+        if(closeBtn.style.zIndex == 1){
+          document.getElementById("map-results").style.zIndex=99999999;
+          closeBtn.style.opacity = 1;
+        }
             
     }
 

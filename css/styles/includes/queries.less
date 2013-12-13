@@ -650,7 +650,8 @@
 					}
 
 					button{
-						opacity: 1;
+						//opacity: 1;
+						z-index: 1;
 					}
 
 					p{
@@ -661,36 +662,7 @@
 						padding-top: 15px;
 					}
 
-					p#email a{
-
-						text-decoration: underline;
-						color:@ww-pink;
-
-						&:hover {
-							text-decoration: none;
-						}
-					}
-
-					p#directions{
-
-						padding-top: 60px;
-
-						a{
-							display: block;
-							margin: 0 15% 0 0;
-							background: @ww-pink;
-							color: #fff;
-							text-align:center;
-							.border-radius();
-							height: 40px;
-							line-height: 40px;
-							border:1px #000 solid;
-
-							&:hover{
-								background: #000;
-							}
-						}
-					}
+					
 				}
 
 				#map-view{
@@ -703,47 +675,7 @@
 				}
 			}
 
-			#team{
-				background: @light-cream;
-				height: 450px;
-
-				ul{
-
-					li{
-						.boxmodel(50%);
-						background: @light-cream;
-						padding-top: 40px;
-
-						img{
-							width: 150px;
-							height: 150px;
-							float: left;
-							.border-radius();
-							padding: 0 10px;
-						}
-
-						h3{
-							font-family: headingfontfamily;
-							padding-bottom: 5px;
-						}
-
-						p {
-
-							word-wrap:break-word;
-
-							a{
-								color:@ww-pink;
-								text-decoration: underline;
-								word-wrap:break-word;
-
-								&:hover{
-									text-decoration: none;
-								}
-							}
-						}
-					}
-				}
-			}
+			
 
 
 		//}
@@ -916,6 +848,24 @@
 			}
 		}
 		/* PROGRAM END*/
+
+		/*CONTACT START*/
+
+		#tab-buttons{
+			margin-top: 70px;
+		}
+
+			#team{
+			//height: 800px;
+
+			ul{
+
+				li{
+					.boxmodel(100%);
+				}
+			}
+		}
+		/*CONTACT END*/
 	}
 
 }
