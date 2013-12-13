@@ -63,7 +63,7 @@
           <section id="team">
             <ul>
               <li>
-                <img src="images/calendar/calendar1.jpg"/>
+                <img src="images/employment/contact.jpg"/>
                 <h3 class="subhead">Marcie Ponte</h3>
                 <p>Executive Director</p>
                 <p>E: <a href="mailto:marcie@workingwomencc.org">marcie</a></p>
@@ -71,7 +71,7 @@
                 <p>F: 416-532-1065</p>
               </li>
               <li>
-                <img src="images/calendar/calendar1.jpg"/>
+                <img src="images/employment/contact.jpg"/>
                 <h3 class="subhead">Blas Austria</h3>
                 <p>Director of Finance and Administration</p>
                 <p>E: <a href="mailto:baustria@workingwomencc.org">baustria</a></p>
@@ -79,7 +79,7 @@
                 <p>F: 416-532-7432</p>
               </li>
               <li>
-                <img src="images/calendar/calendar1.jpg"/>
+                <img src="images/employment/contact.jpg"/>
                 <h3 class="subhead">Adriana Beemans</h3>
                 <p>Director of Programs and Services</p>
                 <p>E: <a href="mailto:abeemans@workingwomencc.org">abeemans</a></p>
@@ -87,7 +87,7 @@
                 <p>F: 416-532-1065</p>
               </li>
               <li>
-                <img src="images/calendar/calendar1.jpg"/>
+                <img src="images/employment/contact.jpg"/>
                 <h3 class="subhead">Sylvie Charliekaram</h3>
                 <p>Manager, Hippy Program</p>
                 <p>E: <a href="mailto:scharliekaram@workingwomencc.org">scharliekaram</a></p>

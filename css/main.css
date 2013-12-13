@@ -109,9 +109,6 @@ header #tp-header {
   height: 60px;
   background: #e5ddcb;
   padding-top: 10px;
-  /*.menu-button {
-		    display: none;
-		}*/
 }
 header #tp-header h1 {
   float: left;
@@ -146,9 +143,6 @@ header #tp-header .top-container {
 }
 header #tp-header ul li {
   padding: 0 10px;
-  /*a:hover {
-		    	opacity: 0.5;
-		    }*/
 }
 header #tp-header ul li a.active {
   font-weight: bold;
@@ -205,17 +199,6 @@ header #bt-header nav {
 header #bt-header nav ul {
   position: relative;
   display: inline-table;
-  /*ul.short{
-		  			li{
-			  			width:160px;
-			  		}
-			  	}
-
-			  	ul.long{
-			  		li{
-			  			width:350px;
-			  		}
-			  	}*/
 }
 header #bt-header nav ul:after {
   content: "";
@@ -286,59 +269,24 @@ div.content-wrapper {
   float: left;
   display: inline-block;
   width: 100%;
+  /* THANK YOU MESSAGE */
   /* HERO START*/
-  /*#hero-wrapper{
-		//position:relative;
-		height:350px;
-
-		#hero{
-			
-			overflow:hidden;
-			width: 100%;
-			
-
-			img{
-				height: 350px;
-				width:auto;
-			}
-		}
-
-		
-
-		#hero-blurb{
-			
-			position: absolute;
-			bottom:3%;
-			left:10%;
-
-
-			a{
-				display:block;
-				background: rgba(255,248,231,0.6);
-				padding: 10px;
-				font-family: @headingfontfamily2;
-			}
-
-
-		}
-	
-	}*/
   /* HERO END*/
   /* INDEX CONTENT START */
   /* INDEX CONTENT END */
   /* PROGRAM START*/
   /* PROGRAM END*/
   /* CONTACT START*/
-  /*#tab-content{
-		background: @light-cream;
-		border:1px @light-cream solid;
-		.border-radius(0px,0px,5px,5px);
-		padding: 20px 10% 0;
-		//margin-botom: 30px;
-		height: 500px;*/
   /*Map Section*/
   /* Team Section */
   /* CONTACT END*/
+}
+div.content-wrapper p#response {
+  height: 300px;
+  max-width: 100%;
+  font-size: 1.5em;
+  padding-top: 100px;
+  text-align: center;
 }
 div.content-wrapper #hero {
   width: 100%;
@@ -377,10 +325,6 @@ div.content-wrapper #steps-wrapper ul#steps li {
 }
 div.content-wrapper #steps-wrapper ul#steps li a {
   text-align: center;
-  /*img{
-						height: 134px;
-						width: 134px;
-					}*/
 }
 div.content-wrapper #steps-wrapper ul#steps li a svg {
   margin-left: 25%;
@@ -409,11 +353,6 @@ div.content-wrapper #events-wrapper {
   display: inline-block;
   width: 100%;
   background: #fff;
-  /*span{
-			float: left;
-			width: 90%;
-			height: 80px;
-		}*/
 }
 div.content-wrapper #events-wrapper #calendar-wrapper {
   float: left;
@@ -650,7 +589,6 @@ div.content-wrapper form input[type="submit"] {
   width: 70%;
   height: 60px;
   float: right;
-  /*margin: 40px 5% 0 0;*/
   margin: 40px 6% 0 0;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
@@ -832,7 +770,6 @@ footer #sign-up input[type="submit"] {
   width: 15%;
   height: 40px;
   float: right;
-  /*margin: 40px 5% 0 0;*/
   margin: 0 2% 0 0;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
@@ -1057,7 +994,6 @@ footer #copyright {
     width: 15%;
     height: 40px;
     float: right;
-    /*margin: 40px 5% 0 0;*/
     margin: 0 2% 0 0;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1233,9 +1169,6 @@ footer #copyright {
     display: block;
     position: static;
     height: auto;
-    /*li.active{
-			        	background: lighten(@ww-pink, 45%);
-			        }*/
   }
   header #bt-header nav ul li {
     display: block;
@@ -1290,9 +1223,6 @@ footer #copyright {
   div.content-wrapper {
     margin-top: 110px;
     /* INDEX CONTENT START */
-    /* HERO START*/
-    /* HERO END*/
-    /* STEPS START */
     /*INDEX END*/
     /* CONTACT START*/
     /*Map Section*/
@@ -1462,7 +1392,6 @@ footer #copyright {
     width: 30%;
     height: 40px;
     float: right;
-    /*margin: 40px 5% 0 0;*/
     margin: 0 2% 0 0;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1513,8 +1442,6 @@ footer #copyright {
     margin-left: 20%;
   }
   footer #smedia .social-media li:last-child svg {
-    /*height: 170px;
-							width: 170px;*/
     height: 60px;
     width: 140px;
   }
@@ -1526,7 +1453,7 @@ footer #copyright {
   }
   /* FOOTER END */
 }
-/* MEDIA QUERY FOR SMALL TABLET AND PHONE*/
+/* MEDIA QUERY FOR EMPLOYMENT PROGRAM PAGE*/
 @media screen and (max-width: 909px) {
   div.content-wrapper {
     margin-top: 110px;
@@ -1543,12 +1470,7 @@ footer #copyright {
     display: inline-block;
     width: 100%;
     background: #b51e52;
-    padding: 30px 0 20px;
-  }
-  div.content-wrapper #progName h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 2.2em;
+    padding: 60px 0 20px;
   }
   div.content-wrapper #program article {
     padding: 0 12px;

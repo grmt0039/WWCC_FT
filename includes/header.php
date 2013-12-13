@@ -1,4 +1,4 @@
-<header>
+    <header>
     <!--<div class="container">-->
       <div id="tp-header">
         
@@ -39,15 +39,15 @@
               </li>
               <li id="program-links"><a href="#programs">Programs &#38; Services</a>
                 <ul>
-                    <li><a href="#program">Action for Neighbourhood Change</a></li>
-                    <li><a href="#program">Community Engagement and Leadership</a></li>
-                    <li><a href="employee.php">Employment Programs</a></li><!--This is one of the pages styled-->
-                    <li><a href="#program">HIPPY</a></li>
-                    <li><a href="#program">LINC</a></li>
-                    <li><a href="#program">On Your Mark</a></li>
-                    <li><a href="#program">Settlement Services</a></li>
-                    <li><a href="#program">Special Projects</a></li>
-                    <li><a href="#program">The Victoria Park Hub</a></li>
+                    <li><a href="#programs">Action for Neighbourhood Change</a></li>
+                    <li><a href="#programs">Community Engagement and Leadership</a></li>
+                    <li><a href="employment.php">Employment Programs</a></li><!--This is one of the pages styled-->
+                    <li><a href="#programs">HIPPY</a></li>
+                    <li><a href="#programs">LINC</a></li>
+                    <li><a href="#programs">On Your Mark</a></li>
+                    <li><a href="#programs">Settlement Services</a></li>
+                    <li><a href="#programs">Special Projects</a></li>
+                    <li><a href="#programs">The Victoria Park Hub</a></li>
                 </ul>
               </li>
               <li id="news-links"><a href="#news">News &#38; Events</a>
@@ -71,4 +71,4 @@
         </div>
       </div>
     <!--</div>-->
-  </header>
+    </header>
