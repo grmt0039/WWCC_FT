@@ -1,73 +1,103 @@
 <?php include("includes/head.php"); ?>
-<?php include("includes/top-bar.php"); ?>
+  <?php include("includes/header.php"); ?>
 
 
-  <div class="container">
+    <!--Content wrapper starts-->
+    <div class="content-wrapper">
+      
+      <!--Container starts-->
+      <div class="container">
+        
+        <ul class='tabs' id="tab-buttons">
+          <li id="form-btn" class="tab active"><a href="#form"><h2>form</h2></a></li>
+          <li id="map-btn" class="tab"><a id="map-btn-a" href="#map"><h2>map</h2></a></li>
+          <li id="team-btn" class="tab"><a href="#team"><h2>team</h2></a></li>
+        </ul>
+        
+        <!--Tab content starts-->
+        <div id="tab-content">
+          
+          <!--Section Form starts-->
+          <section id="form">
+            <form>
+              <p>* All fields are required.</p>
+              <label>
+                <div class="labelappend">First Name</div>
+                <input type="text">
+              </label>
+              <label>
+                <div class="labelappend">Last Name</div>
+                <input type="text">
+              </label>
+              <label>
+                <div class="labelappend">Email</div>
+                <input type="text">
+              </label>
+              <label>
+                <div class="labelappend">Comments</div>
+                <textarea></textarea>
+              </label>
+              <input type="submit" value="Send Message">
+            </form>
+          </section><!--Section Form ends-->
 
-    <div id="wrapper">
-      <section class="maincontent">
-        <form>
+          <!--Section Map starts-->
+          <section id="map">
+            <p id="top-instructions">Select a location on the map.</p>
+            <div id="map-results">
+              <button id="close-btn" onClick="closeDir()">Close</button>
+              <h3 id="location" class="subhead">Select a location on the map for details.</h3>
+              <p id="street"></p>
+              <p id="extra"></p>
+              <p id="city"></p>
+              <p id="postalcode"></p>
+              <p id="phone"></p>
+              <p id="fax"></p>
+              <p id="email"></p>
+              <p id="directions"></p>
+            </div>
+            <div id="map-view"></div>
+          </section><!--Section Map ends-->
 
-          <div class="formgroup">
-            <label>First Name</label>
-            <input type="text" name="firstname" />
-          </div>
+          <!--Section Team starts-->
+          <section id="team">
+            <ul>
+              <li>
+                <img src="images/calendar/calendar1.jpg"/>
+                <h3 class="subhead">Marcie Ponte</h3>
+                <p>Executive Director</p>
+                <p>E: <a href="mailto:marcie@workingwomencc.org">marcie</a></p>
+                <p>T: 416-532-2824 ext. 42</p>
+                <p>F: 416-532-1065</p>
+              </li>
+              <li>
+                <img src="images/calendar/calendar1.jpg"/>
+                <h3 class="subhead">Blas Austria</h3>
+                <p>Director of Finance and Administration</p>
+                <p>E: <a href="mailto:baustria@workingwomencc.org">baustria</a></p>
+                <p>T: 416-532-2824 ext. 41</p>
+                <p>F: 416-532-7432</p>
+              </li>
+              <li>
+                <img src="images/calendar/calendar1.jpg"/>
+                <h3 class="subhead">Adriana Beemans</h3>
+                <p>Director of Programs and Services</p>
+                <p>E: <a href="mailto:abeemans@workingwomencc.org">abeemans</a></p>
+                <p>T: 416-532-2824 ext. 33</p>
+                <p>F: 416-532-1065</p>
+              </li>
+              <li>
+                <img src="images/calendar/calendar1.jpg"/>
+                <h3 class="subhead">Sylvie Charliekaram</h3>
+                <p>Manager, Hippy Program</p>
+                <p>E: <a href="mailto:scharliekaram@workingwomencc.org">scharliekaram</a></p>
+                <p>T: 416-750-9600 ext 260</p>
+                <p>F: 416-750-9606</p>
+              </li>
+            </ul>
+          </section><!--Section Team ends-->
+        </div><!--Tab content ends-->
+      </div><!--Container ends-->
+    </div><!--Content wrapper ends-->
 
-          <div class="formgroup">
-            <label>Last Name</label>
-            <input type="text" name="lastname" />
-          </div>
-
-          <div class="formgroup">
-            <label>Email Address</label>
-            <input type="text" name="email" />
-          </div>
-
-          <div class="formgroup">
-            <label>Address</label>
-            <input type="text" name="address" />
-          </div>
-
-          <div class="formgroup">
-            <label>City</label>
-            <input type="text" name="city" />
-          </div>
-
-          <div class="formgroup">
-            <label>Province</label>
-            <input type="text" name="province" />
-          </div>
-
-          <div class="formgroup">
-            <label>Country</label>
-            <input type="text" name="country" />
-          </div>
-
-          <div class="formgroup">
-            <label>Postal Code</label>
-            <input type="text" name="postalcode" />
-          </div>
-
-          <div class="formgroup">
-            <label>Phone Number</label>
-            <input type="text" name="phone" />
-          </div>
-
-          <div class="formgroup">
-            <label>Comments</label>
-            <textarea name="comments"></textarea>
-          </div>
-
-          <div class="formgroup">
-            <input type="submit" class="btn">
-          </div>
-
-        </form>
-      </section>
-
-      <?php include("includes/sidebar.php"); ?>
-
-    </div>
-  </div>
-
- <?php include("includes/footer.php"); ?>
+<?php include("includes/footer.php"); ?>
