@@ -630,6 +630,8 @@ div.content-wrapper {
 				}
 
 			}
+
+			
 		}
 
 		.active{
@@ -657,9 +659,9 @@ div.content-wrapper {
 		form {
 		    //width: 100%;
 		    //.boxmodel(100%);
-		    height:450px;
+		    height:500px;
 		    text-transform: uppercase;
-		    font-size: 1.6em;
+		    font-size: 1.5em;
 		    font-family: @bodyfontfamily;
 		    background: @light-cream;
 		    
@@ -669,8 +671,8 @@ div.content-wrapper {
 		      .labelappend {
 		        display: inline-block;
 		        //background:#ccc;
-		        padding: 11px 11px 11px 40px;
-		        width:20%;
+		        padding: 11px 11px 11px 30px;
+		        width:24%;
 		        color: #000;
 		      }
 		      
@@ -695,13 +697,22 @@ div.content-wrapper {
 		      }
 
 		    }
+
+		    p{
+				text-transform: capitalize;
+				font-size: 1em;
+				text-align: center;
+				padding: 20px 0 0 0;
+				color: darken(@dark-cream,20%);
+			}
+
 		    input[type="submit"] {
 		      //.widthfloat(70%);
 		      width: 70%;
 		      height: 60px;
 		      float: right;
 		      /*margin: 40px 5% 0 0;*/
-		      margin: 40px 10% 0 0;
+		      margin: 40px 6% 0 0;
 		      .border-radius();
 		      padding: 15px;
 		      border: 1px #000 solid;
@@ -721,6 +732,13 @@ div.content-wrapper {
 
 		/*Map Section*/
 		#map{
+			
+			p#top-instructions{
+				display: none;
+				color: darken(@dark-cream,30%);
+				padding: 10px 0;
+			}
+
 			#map-results{
 				.boxmodel(33.3%);
 				height: 450px;
@@ -731,6 +749,10 @@ div.content-wrapper {
 					font-weight: normal;
 					padding: 30px 0 15px 15px;
 					line-height: 30px;
+				}
+
+				button{
+					opacity: 0;
 				}
 
 				p{

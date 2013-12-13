@@ -608,16 +608,16 @@ div.content-wrapper #tab-buttons .tcontent {
   background: #fff8e7;
 }
 div.content-wrapper form {
-  height: 450px;
+  height: 500px;
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-family: Helvetica, Verdana, Geneva, Arial, san-serif;
   background: #fff8e7;
 }
 div.content-wrapper form label .labelappend {
   display: inline-block;
-  padding: 11px 11px 11px 40px;
-  width: 20%;
+  padding: 11px 11px 11px 30px;
+  width: 24%;
   color: #000;
 }
 div.content-wrapper form label input,
@@ -638,12 +638,19 @@ div.content-wrapper form label textarea {
   margin: 20px 0 -35px -5px;
   resize: vertical;
 }
+div.content-wrapper form p {
+  text-transform: capitalize;
+  font-size: 1em;
+  text-align: center;
+  padding: 20px 0 0 0;
+  color: #c3b187;
+}
 div.content-wrapper form input[type="submit"] {
   width: 70%;
   height: 60px;
   float: right;
   /*margin: 40px 5% 0 0;*/
-  margin: 40px 10% 0 0;
+  margin: 40px 6% 0 0;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -668,6 +675,11 @@ div.content-wrapper form input[type="submit"] {
 div.content-wrapper form input[type="submit"]:hover {
   background: #000;
 }
+div.content-wrapper #map p#top-instructions {
+  display: none;
+  color: #b29a65;
+  padding: 10px 0;
+}
 div.content-wrapper #map #map-results {
   float: left;
   display: inline-block;
@@ -680,6 +692,9 @@ div.content-wrapper #map #map-results h3 {
   font-weight: normal;
   padding: 30px 0 15px 15px;
   line-height: 30px;
+}
+div.content-wrapper #map #map-results button {
+  opacity: 0;
 }
 div.content-wrapper #map #map-results p {
   padding-left: 15px;
@@ -947,6 +962,7 @@ footer #copyright {
     display: inline-block;
     width: 100%;
     /* INDEX CONTENT START */
+    /* INDEX END */
   }
   div.content-wrapper #steps-wrapper ul#steps {
     padding: 20px 150px;
@@ -1000,7 +1016,6 @@ footer #copyright {
   div.content-wrapper #events-wrapper .event p.link a {
     font-size: 1.1em;
   }
-  /* INDEX CONTENT END */
   /* FOOTER START*/
   footer {
     margin-top: 50px;
@@ -1271,6 +1286,10 @@ footer #copyright {
     /* HERO START*/
     /* HERO END*/
     /* STEPS START */
+    /*INDEX END*/
+    /* CONTACT START*/
+    /*Map Section*/
+    /* CONTACT END*/
   }
   div.content-wrapper #hero {
     background-position: 60% 0%;
@@ -1346,6 +1365,150 @@ footer #copyright {
   }
   div.content-wrapper #events-wrapper .event p.link a {
     font-size: 1.1em;
+  }
+  div.content-wrapper form {
+    font-size: 1.8em;
+  }
+  div.content-wrapper form label .labelappend {
+    padding: 10px 0 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  div.content-wrapper form label input,
+  div.content-wrapper form label textarea {
+    padding: 15px;
+    width: 100%;
+    font-size: 1.2em;
+  }
+  div.content-wrapper form p {
+    padding: 20px 0;
+  }
+  div.content-wrapper form input[type="submit"] {
+    width: 100%;
+    float: left;
+    margin: 40px 0 0 -5px;
+  }
+  div.content-wrapper #map {
+    position: relative;
+    height: 450px;
+  }
+  div.content-wrapper #map p#top-instructions {
+    display: inline-block;
+  }
+  div.content-wrapper #map #map-results {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 450px;
+    background: #fff8e7;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  div.content-wrapper #map #map-results h3 {
+    font-family: "Droid Serif", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: normal;
+    padding: 30px 0 15px 15px;
+    line-height: 30px;
+  }
+  div.content-wrapper #map #map-results button {
+    opacity: 1;
+  }
+  div.content-wrapper #map #map-results p {
+    padding-left: 15px;
+  }
+  div.content-wrapper #map #map-results p#phone,
+  div.content-wrapper #map #map-results p#email {
+    padding-top: 15px;
+  }
+  div.content-wrapper #map #map-results p#email a {
+    text-decoration: underline;
+    color: #b51e52;
+  }
+  div.content-wrapper #map #map-results p#email a:hover {
+    text-decoration: none;
+  }
+  div.content-wrapper #map #map-results p#directions {
+    padding-top: 60px;
+  }
+  div.content-wrapper #map #map-results p#directions a {
+    display: block;
+    margin: 0 15% 0 0;
+    background: #b51e52;
+    color: #fff;
+    text-align: center;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px #000 solid;
+  }
+  div.content-wrapper #map #map-results p#directions a:hover {
+    background: #000;
+  }
+  div.content-wrapper #map #map-view {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+  div.content-wrapper #team {
+    background: #fff8e7;
+    height: 450px;
+  }
+  div.content-wrapper #team ul li {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    background: #fff8e7;
+    padding-top: 40px;
+  }
+  div.content-wrapper #team ul li img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 10px;
+  }
+  div.content-wrapper #team ul li h3 {
+    font-family: headingfontfamily;
+    padding-bottom: 5px;
+  }
+  div.content-wrapper #team ul li p {
+    word-wrap: break-word;
+  }
+  div.content-wrapper #team ul li p a {
+    color: #b51e52;
+    text-decoration: underline;
+    word-wrap: break-word;
+  }
+  div.content-wrapper #team ul li p a:hover {
+    text-decoration: none;
   }
   /* FOOTER START*/
   footer {
@@ -1432,4 +1595,68 @@ footer #copyright {
     line-height: 1.6em;
   }
   /* FOOTER END */
+}
+/* MEDIA QUERY FOR SMALL TABLET AND PHONE*/
+@media screen and (max-width: 909px) {
+  div.content-wrapper {
+    margin-top: 110px;
+    float: left;
+    display: inline-block;
+    width: 100%;
+    /* PROGRAM START*/
+    /* PROGRAM END*/
+  }
+  div.content-wrapper #progName {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    background: #b51e52;
+    padding: 30px 0 20px;
+  }
+  div.content-wrapper #progName h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.2em;
+  }
+  div.content-wrapper #program article {
+    padding: 0 12px;
+  }
+  div.content-wrapper #program article h3 {
+    font-size: 2.4em;
+    text-align: center;
+  }
+  div.content-wrapper #program article img {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    padding: 50px 0 25px;
+  }
+  div.content-wrapper #program article img:first-child {
+    padding-right: 0;
+  }
+  div.content-wrapper #program article img:last-child {
+    padding: 0 0 25px;
+  }
+  div.content-wrapper #program article .article-wrapper {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    padding: 0 0 50px;
+  }
+  div.content-wrapper #program article .article-wrapper p {
+    padding: 25px 0;
+  }
+  div.content-wrapper #program article .article-wrapper p:last-child {
+    padding-bottom: 0;
+  }
+  div.content-wrapper #program article .article-wrapper ul li {
+    margin: 0 0 0 0;
+    font-size: 1.6em;
+  }
+  div.content-wrapper #program article:first-child {
+    background: #fff;
+  }
+  div.content-wrapper #program article:last-child {
+    padding: 40px 12px;
+  }
 }
